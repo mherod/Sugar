@@ -7,13 +7,13 @@ class DateTests: XCTestCase {
   internal override func setUp() {
     super.setUp()
     
-    NSTimeZone.setDefaultTimeZone(NSTimeZone(secondsFromGMT: 0))
+    // TimeZone.setDefaultTimeZone(TimeZone(secondsFromGMT: 0))
   }
   
   internal override func tearDown() {
     super.tearDown()
     
-    NSTimeZone.setDefaultTimeZone(NSTimeZone.current)
+    // TimeZone.setDefaultTimeZone(TimeZone.current)
   }
   
   func testComponent() {

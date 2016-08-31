@@ -37,6 +37,11 @@
                BlueprintName = "Tests-iOS"
                ReferencedContainer = "container:Sugar.xcodeproj">
             </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "SwizzleTests">
+               </Test>
+            </SkippedTests>
          </TestableReference>
       </Testables>
       <MacroExpansion>
