@@ -10,7 +10,7 @@ public extension UIImage {
     let image = UIGraphicsGetImageFromCurrentImageContext()
     UIGraphicsEndImageContext()
 
-    self.init(cgImage: image!.cgImage!)
+    self.init(cgImage: (image?.cgImage!)!)
   }
 
   public var hasContent: Bool {

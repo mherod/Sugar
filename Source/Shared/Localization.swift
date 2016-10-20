@@ -10,6 +10,6 @@ public func localizedString(_ key: String, _ bundleClass: AnyClass? = nil, comme
 
 public func localizedString(_ key: String, _ bundleClass: AnyClass? = nil, comment: String? = nil, arguments: CVarArg...) -> String {
   return withVaList(arguments) {
-    (NSString(format: localizedString(key, bundleClass, comment: comment), locale: NSLocale.current, arguments: $0) as String)
+    (NSString(format: localizedString(key, bundleClass, comment: comment), locale: Locale.current, arguments: $0) as String)
     } as String
 }

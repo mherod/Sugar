@@ -6,7 +6,7 @@ public struct KeyboardInfo {
   public let curve: UIViewAnimationCurve
 
   public init?(notification: Notification) {
-    guard let userInfo = (notification as Notification).userInfo,
+    guard let userInfo = (notification as NSNotification).userInfo,
       let value = userInfo[UIKeyboardFrameEndUserInfoKey] as? NSValue,
       let duration = userInfo[UIKeyboardAnimationDurationUserInfoKey] as? TimeInterval,
       let curve = userInfo[UIKeyboardAnimationCurveUserInfoKey] as? Int
