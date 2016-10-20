@@ -18,7 +18,7 @@ class OperatorTests: XCTestCase {
 
     testURL ?= nilURL
     XCTAssertNotEqual(testURL, nilURL)
-    
+
     XCTAssertEqual(testURL, hyper)
   }
 }

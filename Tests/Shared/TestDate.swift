@@ -11,16 +11,16 @@ class DateTests: XCTestCase {
       NSTimeZone.default = timeZone
     }
   }
-  
+
   internal override func tearDown() {
     super.tearDown()
 
     NSTimeZone.default = TimeZone.current
   }
-  
+
   func testComponent() {
     let date = Date(timeIntervalSince1970: 1456983015)
-    
+
     XCTAssert(date.second == 15)
     XCTAssert(date.minute == 30)
     XCTAssert(date.hour == 5)

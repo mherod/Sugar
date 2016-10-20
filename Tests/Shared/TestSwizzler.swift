@@ -36,4 +36,3 @@ class SwizzleTests: XCTestCase {
     XCTAssertFalse(object.method())
   }
 }
-

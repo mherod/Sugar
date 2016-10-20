@@ -33,7 +33,7 @@ public extension UIDevice {
 
     return result
   }
-    
+
   public static func isPhone() -> Bool {
     return UIDevice().userInterfaceIdiom == .phone
   }

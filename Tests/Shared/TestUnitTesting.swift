@@ -12,4 +12,3 @@ class UnitTestTests: XCTestCase {
     XCTAssertTrue(timing < 1)
   }
 }
-
